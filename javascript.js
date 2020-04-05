@@ -33,3 +33,10 @@ function peep() {
         // peep();
     }, time);
 }
+
+function startGame() {
+    scoreBoard.textContent = 0;
+    timeUp = false;
+    peep();
+    setTimeout(() => timeUp = true, 10000)
+}
